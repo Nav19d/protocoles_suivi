@@ -1,0 +1,56 @@
+{
+   "chained":false,
+   "label":"Cluster",
+   "label_list":"Clusters",
+   "sorts":[
+      {
+         "prop":"sites_group_name"
+      }
+   ],
+   "display_properties":[
+      "sites_group_name",
+      "strates",
+      "nb_sites",
+      "nb_visits"
+   ],
+   "display_list":[
+      "sites_group_name",
+      "strates",
+      "nb_sites",
+      "nb_visits"
+   ],
+   "specific":{
+      "sites_group_description":{
+         "type_widget":"textarea",
+         "attribut_label":"Description",
+         "hidden":true
+      },
+      "comments":{
+         "type_widget":"text",
+         "attribut_label":"Commentaires",
+         "hidden":true
+      },
+      "strates":{
+         "type_widget":"radio",
+         "attribut_label":"strates",
+         "values":[
+            "PLSUP",
+            "PLINF",
+            "XSUP",
+            "XINF"
+         ],
+         "required":true
+      },
+      "sites_group_name": {
+         "type_widget": "text",
+         "attribut_label": "Numero",
+         "required": true
+      },
+      "sites_group_code": {
+         "type_widget": "text",
+         "attribut_label": "Code",
+         "required": false,
+         "hidden": true
+      }
+   }
+}

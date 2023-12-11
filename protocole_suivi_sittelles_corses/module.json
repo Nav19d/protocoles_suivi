@@ -1,0 +1,11 @@
+{
+   "module_label":"sittelles",
+   "module_desc":"Module pour le protocole Sittelle",
+   "export_csv":[
+      {
+         "label":"export",
+         "type":"csv",
+         "method":"standard"
+      }
+   ]
+}

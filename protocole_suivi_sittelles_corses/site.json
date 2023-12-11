@@ -1,0 +1,64 @@
+{
+   "chained":false,
+   "label":"Point d'écoute",
+   "label_list":"Points d'écoute",
+   "display_properties":[
+      "base_site_name"
+   ],
+   "display_list": ["base_site_name"],
+   "genre":"M",
+   "geometry_type":"Point",
+   "sorts":[{
+      "prop":"base_site_name", "dir": "asc"
+   }],
+   "map_label_field_name":"base_site_name",
+   "specific":{
+      "base_site_name":{
+         "type_widget":"number",
+         "attribut_label":"Numéro",
+         "required":true
+      },
+      "id_inventor":{
+         "type_widget":"datalist",
+         "attribut_label":"Descripteur",
+         "api":"users/menu/__MODULE.ID_LIST_OBSERVER",
+         "application":"GeoNature",
+         "keyValue":"id_role",
+         "keyLabel":"nom_complet",
+         "type_util":"user",
+         "required":false,
+         "hidden":true
+      },
+      "base_site_description":{
+         "type_widget":"textarea",
+         "attribut_label":"Description",
+         "hidden":true
+      },
+      "base_site_code":{
+         "type_widget":"text",
+         "attribut_label":"Numéro du cluster suivi de celui du point d'écoute",
+         "required":false,
+         "hidden": true,
+         "value": ""
+      },
+      "id_nomenclature_type_site":{
+         "type_widget":"datalist",
+         "attribut_label":"Type site",
+         "api":"nomenclatures/nomenclature/TYPE_SITE",
+         "application":"GeoNature",
+         "keyValue":"id_nomenclature",
+         "keyLabel":"label_fr",
+         "data_path":"values",
+         "type_util":"nomenclature",
+         "required":false,
+         "value": 676,
+         "hidden": true
+      },
+      "first_use_date":{
+         "type_widget":"date",
+         "attribut_label":"Date description",
+         "required":false,
+         "hidden":true
+      }
+   }
+}

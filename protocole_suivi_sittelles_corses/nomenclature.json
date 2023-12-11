@@ -1,0 +1,11 @@
+{
+  "nomenclatures": [
+    {
+      "type":"TYPE_SITE",
+      "cd_nomenclature": "SIT_PT_E",
+      "mnemonique": "Pt_sittelles",
+      "label_default": "Point d'écoute sittelles",
+      "definition_default": "Point d'écoute sittelles"
+    }
+  ]
+}
